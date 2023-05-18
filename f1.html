@@ -1,0 +1,180 @@
+
+<meta charset="utf-8">
+<meta name="author" content="Author Name">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PAGE TITLE</title>
+
+
+<link rel="shortcut icon" href=".png">
+<link href="f1.css" rel="stylesheet" type="text/css">
+<script src="f1.js" defer type="text/js"></script>    
+</head>
+
+<body>
+    
+    <nav >
+            
+        <ul id="navbar" >
+            <li><a style="text-decoration: none;"href="" onclick="changebg()" id="n1">bg1</a></li>
+            <li><a style="text-decoration: none;" href="" id="n2">MUSIC</a></li>
+            <li><a href="" id="n3">HISTORY</a></li>
+        </ul>
+    
+    </nav>
+    
+
+
+
+      
+       
+    <div id="page1">
+
+        <button onclick="changebg()" id="b1"> flashing lights</button><br>
+        <button onclick="stopbg()"> stop</button><br>
+       
+        <button onclick="addtext()" id="b2"> add para</button><br>
+        <button onclick="addlink()" id="b3"> add link</button><br>
+
+        <button onclick="changenav()"> change nav bar</button>
+
+        <p id="tb">
+
+    </p>
+    <div id="sidebar1" onclick="slideright()" onmouseleave="back()">
+        
+    </div> 
+
+     
+    </div>
+
+
+    <script>
+        let page1 = document.getElementById("page1");
+        let ab;
+        let b1 = document.getElementById("b1");
+        b1.style.backgroundColor="red";
+
+        page1.style.width="100vw";
+        page1.style.height="100vh";
+        page1.style.backgroundColor="red";
+        page1.style.Color="red";
+
+        function changebg()
+        {
+          
+                 
+                 
+                
+            for(let i=0 ; i<=100 ;i=i+5)
+            {   
+              
+                ab =setInterval(() => 
+              {   
+              
+                
+                 if(i%2==0)
+                      {
+                  
+                         page1.style.backgroundColor="blue";
+                         console.log("1");
+                      }
+                  else
+                    {
+                         page1.style.backgroundColor="red";
+                         console.log("2");
+                         
+                     }
+                      }, 1);
+
+               
+
+            } 
+       
+        } 
+         function stopbg(){
+            clearInterval(a);
+            page1.style.backgroundColor="red";
+         }
+
+        
+
+        function changenav()
+        {
+            let a= document.createElement("n3");
+            let b= document.createTextNode("hello");
+            a.appendChild(b);
+            let c = document.getElementById("navbar");
+            c.appendChild(a);
+
+        }
+
+        function addtext()
+        {   let s = prompt("give add your para");
+            let a= document.createElement("tb1");
+            let b= document.createTextNode(s);
+            a.appendChild(b);
+            let c = document.getElementById("tb");
+            c.appendChild(a);
+
+
+        }
+
+        function addlink()
+        {
+            let link= document.createElement('a');
+            let t = document.createTextNode("link to youtube")
+            link.appendChild(t);
+            link.style.color=("white");
+            link.href="https://www.youtube.com/";
+            let c = document.getElementById("navbar");
+            c.appendChild(link);
+
+
+
+        }
+
+       
+        function slideright()
+    {
+        let a = document.getElementById("sidebar1");
+
+      a.style.animation=("slide 4s forwards");
+     a.style.webkitAnimationDelay=("0s");
+     a.style.backgroundColor=("green");
+
+    
+    }
+
+
+
+
+    function back()
+    {
+        let a = document.getElementById("sidebar1");
+        a.style.backgroundcolor=("yellow");
+        a.style.animation=("slide1 2s backwards");
+        a.style.transition=("")
+        a.style.webkitAnimationDelay=("0s");
+        a.style.width=("500px");
+        a.style.height=("500px") ;
+        a.style.position=("absolute");
+        
+}
+
+    
+
+        
+    
+    
+    
+    
+    </script>
+
+
+   
+
+
+</body>

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../dark mode light mode/image1"
+		},
+		{
+			"path": "../dark mode light mode/image2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "image1"
+	}
+}

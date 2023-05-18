@@ -1,0 +1,81 @@
+/* FONTS ------------------------------------------------- */
+
+@font-face {
+font-family: 'Font Name';
+src: url('./fonts/font-name.eot');
+src: url('./fonts/font-name.eot?#iefix') format('embedded-opentype'),
+     url('./fonts/font-name.woff2') format('woff2'),
+     url('./fonts/font-name.woff') format('woff'),
+     url('./fonts/font-name.ttf') format('truetype');
+font-style: normal;
+font-weight: normal;
+}
+
+
+/* OVERALL ----------------------------------------------- */
+/* Body styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Navigation styles */
+nav{
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 0;
+   
+
+}
+nav ul{
+    flex: 1;
+    text-align: left;
+    padding-right: 30px;
+        
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 30px 40px;
+}
+nav ul li a{
+    color:black;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    transition: width 0.3s;
+    
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.column {
+    
+     width: 33.33%;
+    height: 400px;
+    color: white;
+  float: left;
+ 
+        background-color: black;
+}
+
+

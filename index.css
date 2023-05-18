@@ -1,0 +1,29 @@
+
+body
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 120px;
+    color:white;
+    font-style:oblique;
+    padding: 5%;
+
+}
+p{
+    width: 60%;
+    
+    height: fit-content;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color:white;
+    background-color: aqua;
+
+}
+h1{
+    font-size: 32px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
